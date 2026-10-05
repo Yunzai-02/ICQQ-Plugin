@@ -3,6 +3,6 @@
   "type": "module",
   "author": "TimeRainStarSky",
   "dependencies": {
-    "icqq": "*"
+    "icqq": "npm:@icqqjs/icqq"
   }
 }

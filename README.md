@@ -25,12 +25,6 @@ TRSS-Yunzai ICQQ Bot 适配器 插件
 ```sh
 cd plugins/ICQQ-Plugin
 
-pnpm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
-
-UserName: # 你的 GitHub 账号
-Password: # 前往 https://github.com/settings/tokens/new 获取，scopes 勾选 read:packages
-E-Mail: # 你的公开邮箱地址
-
 pnpm add icqq@npm:@icqqjs/icqq
 ```
 
@@ -53,3 +47,9 @@ pnpm add icqq@npm:@icqqjs/icqq
 - #QQ账号
 - #QQ设置 + `QQ号:密码(留空扫码):登录设备:版本号:独立签名地址`
 - #QQ签名 + `签名服务器地址`
+
+## 配置项
+
+配置文件：`config/ICQQ.yaml`
+
+- `captcha_url`：滑块 / 登录验证站点地址，默认 `https://captcha.521002.xyz`
