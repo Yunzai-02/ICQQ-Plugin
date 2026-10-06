@@ -53,3 +53,8 @@ pnpm add icqq@npm:@icqqjs/icqq
 配置文件：`config/ICQQ.yaml`
 
 - `captcha_url`：滑块 / 登录验证站点地址，默认 `https://captcha.521002.xyz`
+- `reconnect.enable`：掉线自动重连开关，默认 `true`
+- `reconnect.kickoff`：被踢下线时是否自动重连，默认 `true`（其他设备登录会互相顶号）
+- `reconnect.interval`：首次重连等待秒数，之后指数递增，默认 `5`
+- `reconnect.max_interval`：重连等待上限秒数，默认 `300`
+- `reconnect.max_attempts`：主动重连次数上限，`0` 为不限，默认 `0`
