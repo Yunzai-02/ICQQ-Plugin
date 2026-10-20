@@ -16,11 +16,21 @@ TRSS-Yunzai ICQQ Bot 适配器 插件
 ## 安装教程
 
 1. 准备：[TRSS-Yunzai](../../../Yunzai)
-2. 输入：`#安装ICQQ-Plugin`
+2. 输入：`git clone https://github.com/Yunzai-02/ICQQ-Plugin ./plugins/ICQQ-Plugin`
 3. 输入：`#QQ签名[签名服务器地址]`
 4. 输入：`#QQ设置QQ号:密码:登录设备`
 
 ## 安装 ICQQ
+
+```bash
+npm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
+
+# 回车，根据提示登录github
+
+UserName: # 你的github账号 请填写小写
+Password: # 前往 https://github.com/settings/tokens/new  获取，scopes勾选 read:packages
+E-Mail: # 你的公开邮箱地址
+```
 
 ```sh
 cd plugins/ICQQ-Plugin
